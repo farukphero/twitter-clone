@@ -74,7 +74,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onSubmit, title, body, a
               flex 
               items-center 
               justify-between 
-              p-10 
+              px-10 pt-12
               rounded-t
               "
             >
@@ -100,7 +100,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, onSubmit, title, body, a
               {body}
             </div>
             {/*footer*/}
-            <div className="flex flex-col gap-2 p-10">
+            <div className="flex flex-col gap-2 px-10 pb-10">
               <Button disabled={disabled} label={actionLabel} secondary fullWidth large onClick={handleSubmit} />
               {footer}
             </div>

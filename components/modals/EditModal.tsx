@@ -38,7 +38,7 @@ const EditModal = () => {
       await axios.patch('/api/edit', { name, username, bio, profileImage, coverImage });
       mutateFetchedUser();
 
-      toast.success('Updated');
+      toast.success('Updated successful.');
 
       editModal.onClose();
     } catch (error) {
